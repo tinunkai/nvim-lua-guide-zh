@@ -707,11 +707,7 @@ vim.g.some_global_variable = nil
 
 #### Caveats
 
-Unlike options meta-accessors, you cannot specify a number for buffer/window/tabpage-scoped variables.
-
-Additionally, you cannot add/update/delete keys from a dictionary stored in one of these variables. For example, this snippet of Vimscript code does not work as expected:
-与选项元访问器不同，您不能为缓冲区 / 窗口 / 选项卡页范围的变量指定数字。
-此外，您不能从存储在这些变量之一的字典中添加 / 更新 / 删除键。 例如，这段 Vimscript 代码不能按预期工作：
+您不能从存储在这些变量之一的字典中添加 / 更新 / 删除键。 例如，这段 Vimscript 代码不能按预期工作：
 
 ```vim
 let g:variable = {}
